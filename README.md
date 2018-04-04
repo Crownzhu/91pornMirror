@@ -45,6 +45,6 @@
 ## 关注我
 
 <ul>
-<li>博客：https://yantuz.cn</li>
+<li>博客：[岩兔站](https://yantuz.cn "岩兔站-关注互联网折腾服务器分享码农的日常")</li>
 <li>微博：https://weibo.com/yztop</li>
 </ul>
