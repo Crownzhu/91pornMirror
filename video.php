@@ -17,7 +17,7 @@ $video = getVideo($url);
     </head>
     <body>
     	<header class="ui-header ui-header-positive ui-border-b">
-            <i class="ui-icon-return" onclick="history.back()"></i><a href="91.php" style="position: absolute;left: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;列表页</a><h1>视频详情</h1><button onclick="window.location.href='index.php';" class="ui-btn">回首页</button>
+            <i class="ui-icon-return" onclick="history.back()"></i><a href="list.php" style="position: absolute;left: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;列表页</a><h1>视频详情</h1><button onclick="window.location.href='index.php';" class="ui-btn">回首页</button>
         </header>
 
         <section class="ui-container">
@@ -61,22 +61,3 @@ $video = getVideo($url);
         </script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
