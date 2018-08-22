@@ -66,28 +66,3 @@ function getHtml($url){
     $snoopy->fetch($url);
     return $snoopy->results;
 }
-
-
-
-
-
-function count($array_or_countable,$mode = COUNT_NORMAL){
-    if(is_array($array_or_countable) || is_object($array_or_countable)){
-        return count($array_or_countable, $mode);
-    }else{
-        return 0;
-    }
-}
-
-function each(&$array){
-       $res = array();
-       $key = key($array);
-       if($key !== null){
-           next($array); 
-           $res[1] = $res['value'] = $array[$key];
-           $res[0] = $res['key'] = $key;
-       }else{
-           $res = false;
-       }
-       return $res;
-    }
