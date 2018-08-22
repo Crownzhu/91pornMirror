@@ -65,7 +65,7 @@ $list = getList($domain,$page);
 	                    <li data-href="video.php?url=<?php echo urlencode($value["link"]) ?>">
 	                        <div class="ui-border">
 	                            <div class="ui-grid-trisect-img">
-	                                <span style="background-image:url('<?php echo $value["pic"]?>')"></span>
+	                                <span style="background-image:url('<?php echo str_replace("1_","",$value["pic"])?>')"></span>
 	                            </div>
 	                            <div style="padding: 2%">
 	                                <h4 class="ui-nowrap-multi" style="height:50px"><?php echo $value["title"]; ?></h4>                                
