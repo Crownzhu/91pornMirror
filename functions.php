@@ -80,16 +80,14 @@ function count($array_or_countable,$mode = COUNT_NORMAL){
 }
 
 function each(&$array){
-   $result = array();
-   $key = key($array);
-   if(!is_null($key)){
-       $val = $array[$key];
-       
-       $result[1] = $val;
-       $result['value'] = $val;
-       $result[0] = $key;
-       $result['key'] = $key;
-       next($array); 
-   }
-   return $result;
-}
+       $res = array();
+       $key = key($array);
+       if($key !== null){
+           next($array); 
+           $res[1] = $res['value'] = $array[$key];
+           $res[0] = $res['key'] = $key;
+       }else{
+           $res = false;
+       }
+       return $res;
+    }
