@@ -66,3 +66,40 @@ function getHtml($url){
     $snoopy->fetch($url);
     return $snoopy->results;
 }
+
+<?php
+
+echo fun_adm_count('');
+
+function fun_adm_count($array_or_countable,$mode = COUNT_NORMAL){
+    if(is_array($array_or_countable) || is_object($array_or_countable)){
+        return count($array_or_countable, $mode);
+    }else{
+        return 0;
+    }
+}
+
+<?php
+
+echo '<pre>';
+
+$fruit = array(1,'a' => array('bbb'=>'ccc'), 'b' => 'banana', 'c' => 'cranberry');
+
+while(list($key, $val) = fun_adm_each($fruit)){
+   echo "$key => $val \n";
+}
+
+function fun_adm_each(&$array){
+   $result = array();
+   $key = key($array);
+   if(!is_null($key)){
+       $val = $array[$key];
+       
+       $result[1] = $val;
+       $result['value'] = $val;
+       $result[0] = $key;
+       $result['key'] = $key;
+       next($array); 
+   }
+   return $result;
+}
