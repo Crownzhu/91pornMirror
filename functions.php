@@ -67,9 +67,9 @@ function getHtml($url){
     return $snoopy->results;
 }
 
-<?php
 
-echo fun_adm_count('');
+
+
 
 function fun_adm_count($array_or_countable,$mode = COUNT_NORMAL){
     if(is_array($array_or_countable) || is_object($array_or_countable)){
@@ -77,16 +77,6 @@ function fun_adm_count($array_or_countable,$mode = COUNT_NORMAL){
     }else{
         return 0;
     }
-}
-
-<?php
-
-echo '<pre>';
-
-$fruit = array(1,'a' => array('bbb'=>'ccc'), 'b' => 'banana', 'c' => 'cranberry');
-
-while(list($key, $val) = fun_adm_each($fruit)){
-   echo "$key => $val \n";
 }
 
 function fun_adm_each(&$array){
