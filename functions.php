@@ -71,7 +71,7 @@ function getHtml($url){
 
 
 
-function fun_adm_count($array_or_countable,$mode = COUNT_NORMAL){
+function count($array_or_countable,$mode = COUNT_NORMAL){
     if(is_array($array_or_countable) || is_object($array_or_countable)){
         return count($array_or_countable, $mode);
     }else{
@@ -79,7 +79,7 @@ function fun_adm_count($array_or_countable,$mode = COUNT_NORMAL){
     }
 }
 
-function fun_adm_each(&$array){
+function each(&$array){
    $result = array();
    $key = key($array);
    if(!is_null($key)){
