@@ -23,7 +23,7 @@
             "require": {
                 "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.4",
-                "php": ">=5.5"
+                "php": "^7.1.0"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -86,7 +86,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": "^7.1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.0"
@@ -137,7 +137,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0",
+                "php": "^7.1.0",
                 "psr/http-message": "~1.0"
             },
             "provide": {
@@ -238,7 +238,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": "^7.1.0"
             },
             "type": "library",
             "autoload": {
@@ -283,7 +283,7 @@
             "require": {
                 "jaeger/g-http": "^1.1",
                 "jaeger/phpquery-single": "^0.9",
-                "php": ">=7.0",
+                "php": "^7.1.0",
                 "tightenco/collect": "^5"
             },
             "require-dev": {
@@ -329,7 +329,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": "^7.1.0"
             },
             "type": "library",
             "extra": {
@@ -379,7 +379,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": "^7.1.0"
             },
             "suggest": {
                 "ext-mbstring": "For best performance"
@@ -438,7 +438,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": "^7.1.0"
             },
             "type": "library",
             "extra": {
@@ -493,7 +493,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": "^7.1.0",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/polyfill-php72": "~1.5"
             },
