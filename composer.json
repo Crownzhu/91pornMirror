@@ -2,6 +2,6 @@
     "require": {
         "jaeger/querylist": "^4.0",
         "twig/twig": "^2.0"
-        "php": "~7.1.0"
+        "php": "^7.1.0"
     }
 }
