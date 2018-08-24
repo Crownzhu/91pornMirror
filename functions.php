@@ -70,8 +70,8 @@ function getHtml($url){
 
 <?php
 
-echo count('');
-function count($array_or_countable,$mode = COUNT_NORMAL){
+echo fun_adm_count('');
+function fun_adm_count($array_or_countable,$mode = COUNT_NORMAL){
     if(is_array($array_or_countable) || is_object($array_or_countable)){
         return count($array_or_countable, $mode);
     }else{
@@ -86,11 +86,11 @@ echo '<pre>';
 
 $fruit = array(1,'a' => array('bbb'=>'ccc'), 'b' => 'banana', 'c' => 'cranberry');
 
-while(list($key, $val) = each($fruit)){
+while(list($key, $val) = fun_adm_each($fruit)){
    echo "$key => $val \n";
 }
 
-function each(&$array){
+function fun_adm_each(&$array){
    $result = array();
    $key = key($array);
    if(!is_null($key)){
